@@ -119,9 +119,9 @@ int main()
         //cout << k << "'th smallest element is :  " << kthSmallest(arr, 0, n - 1, k) << endl;
         int res = kthSmallest(arr, 0, n - 1, k);
         end = clock();
-        time.push_back(((double)(end - start)));
+        time.push_back(((double)(end - start))/(double)CLOCKS_PER_SEC);
 
-        cout << n << "\t\t" << time[i++] << "\t\t" << 0.211211*n << endl;
+        cout << n << "\t\t" << time[i++] << "\t\t" << 4 * 0.0000001 * n << endl;
     }
 	return 0;
 }
